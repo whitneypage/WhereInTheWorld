@@ -1,0 +1,12 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url("IMG/tiny_grid.png");
+}
+
+h2, h1, p{
+	color: black;
+}
+
+

@@ -12,6 +12,11 @@ app.config(function($routeProvider) {
 			controller: 'loginCtrl'
 		})
 
+		.when('/game', {
+			templateUrl: 'gamepage/game.html',
+			controller: 'gameCtrl'
+		})
+
 
 
 		.otherwise ({
