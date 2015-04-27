@@ -1,7 +1,11 @@
 <h1>Which State ?</h1> <div></div><p>Score : {{score}}</p></div>
-<button ng-click ="getMapView()">Play</button>
+<button>Play</button>
 <form>
 <input type="text" ng-model="userGuess" placeholder="Enter the State here" />
 <button ng-click = "addScore()">Guess!</button>
 </form>
-<img href="{{map}}">
+</br>
+<div id="map-canvas">
+	<ui-gmap-google-map center='map.center' zoom='map.zoom' options='options'></ui-gmap-google-map>
+</div>
+

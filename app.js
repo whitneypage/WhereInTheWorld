@@ -1,4 +1,4 @@
-var app = angular.module('mapApp', ['ngRoute', 'firebase']);
+var app = angular.module('mapApp', ['ngRoute', 'firebase', 'uiGmapgoogle-maps']);
 
 app.constant('fb', {
   		url: 'https://where-in-the-world.firebaseIO.com'

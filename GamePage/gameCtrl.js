@@ -4,14 +4,24 @@ app.controller('gameCtrl', function($scope, gameService) {
 
 //$scope.coordinates = chance.coordinates().split(' ').join('');
 //alert($scope.coordinates);
-$scope.coordinates = gameService.coordinates();
-$scope.stateName = gameService.stateName();
-$scope.score = 0;
-$scope.map;
+// $scope.coordinates = gameService.coordinates();
+// $scope.stateName = gameService.stateName();
+ $scope.score = 0;
 
-$scope.getMapView = function() {
- return gameService.getMapView($scope.coordinates);
-}
+
+$scope.map = { 
+	center: { latitude: 36.964645, longitude: -122.01523 }, 
+	zoom: 18,
+};
+
+$scope.options = {
+	mapTypeId: google.maps.MapTypeId.SATELLITE
+};
+
+
+
+
+
 
 
 

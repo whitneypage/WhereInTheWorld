@@ -10,3 +10,6 @@ h2, h1, p{
 }
 
 
+.angular-google-map-container { 
+	height: 400px; 
+}

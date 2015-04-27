@@ -34,20 +34,7 @@ this.stateName = function() {
 
 
 
- 
-this.getMapView = function(coordinates) {
-   var url = 'https://maps.googleapis.com/maps/api/streetview?size=5000x5000&location=' + coordinates;
-   console.log(url);
-   $http ({
-   	method: 'GET',
-   	url: url
-   }).then(function(data) {
-   	 console.log(data);
-   })
-   
- }//ends getRandomView*/
 
-this.getMapView();
 
 
 
