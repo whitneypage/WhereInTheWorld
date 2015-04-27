@@ -17,6 +17,11 @@ app.config(function($routeProvider) {
 			controller: 'gameCtrl'
 		})
 
+		.when('/score', {
+			templateUrl: 'scorepage/score.html',
+			controller: 'scoreCtrl'
+		})
+
 
 
 		.otherwise ({

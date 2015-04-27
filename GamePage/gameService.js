@@ -14,20 +14,37 @@ app.service('gameService', function($http, $q) {
    latitude: '40.777258',
    longitude: '-111.888198'
  },
+ {
+ 	name: 'alaska',
+ 	latitude:'63.059218',
+ 	longitude:'-151.369593'
+ }
 ]
 
+this.random;
+this.getNewMap = function() {
+  this.random = places[Math.floor(Math.random()*places.length)]
+   console.log(this.random);
+   return {
+   	center: {
+   		latitude: this.random.latitude,
+   		longitude: this.random.longitude
+   	},
+   	zoom: 18
+   }
+}
 
+this.delete = function(x) {
+   for(var i = 0; i < places.length; i++){
+   	if(places[i].name === x){
+   		places.splice(i, 1);
+   	}
+   	console.log(places);
+   }
+}
 
+this.getNewMap();
 
-    for (var i = 0; i < places.length; i++) {
-    	this.stateName = places[i].name;
-        this.latitude = places[i].latitude;
-        this.longitude = places[i].longitude;
-
-    }
-console.log(this.stateName);
-console.log(this.latitude);
-console.log(this.longitude);
 
 
 

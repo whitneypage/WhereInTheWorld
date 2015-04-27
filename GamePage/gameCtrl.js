@@ -1,6 +1,6 @@
 var app = angular.module('mapApp');
 
-app.controller('gameCtrl', function($scope, gameService) {
+app.controller('gameCtrl', function($scope, gameService, $timeout, $location) {
 
 //$scope.coordinates = chance.coordinates().replace(/,/g, '').split(" ");
 //console.log($scope.coordinates);
@@ -13,8 +13,8 @@ app.controller('gameCtrl', function($scope, gameService) {
 
 $scope.map = {
 	center: { 
-	  latitude: gameService.latitude, 
-	  longitude: gameService.longitude 
+	  latitude:gameService.random.latitude,
+	  longitude:gameService.random.longitude
 	}, 
 	zoom: 18,
 	};
@@ -29,17 +29,30 @@ $scope.options = {
  };
 
 
-
+var counter = 10;
 $scope.addScore = function() {	
-    if ($scope.userGuess.toLowerCase() === gameService.stateName){
+    if ($scope.userGuess.toLowerCase() === gameService.random.name){
 	    $scope.score += 100;
-	    alert("You got it right!")
+	    alert("You got it right!");
+	    gameService.delete($scope.userGuess.toLowerCase());
+	    $scope.map = gameService.getNewMap();
+	    console.log($scope.map);
+	    counter --;
+
+
     } else {
-    	alert("Sorry Sucker")
+    	alert("Sorry Sucker");
+    	$timeout(function(){
+    		$scope.map = gameService.getNewMap();
+    	});
+    	counter --;
     }
   $scope.userGuess = "";
 }
 
+if(counter === 0) {
+	$location.path('/score')
+}
 
 
 
