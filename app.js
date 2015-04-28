@@ -12,14 +12,15 @@ app.config(function($routeProvider) {
 			controller: 'loginCtrl'
 		})
 
-		.when('/game', {
+		.when('/game/:userId', {
 			templateUrl: 'gamepage/game.html',
 			controller: 'gameCtrl'
 		})
 
-		.when('/score', {
+		.when('/score/:userId', {
 			templateUrl: 'scorepage/score.html',
 			controller: 'scoreCtrl'
+
 		})
 
 
