@@ -17,10 +17,9 @@ app.config(function($routeProvider) {
 			controller: 'gameCtrl'
 		})
 
-		.when('/score/:userId', {
+		.when('/score', {
 			templateUrl: 'scorepage/score.html',
 			controller: 'scoreCtrl'
-
 		})
 
 

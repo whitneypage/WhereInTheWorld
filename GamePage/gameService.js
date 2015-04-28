@@ -216,8 +216,8 @@ app.service('gameService', function($http, $q) {
 	 {
 
 	   name: 'utah',
-	   latitude: '38.744879',
-	   longitude: '-109.565745'
+	   latitude: '40.225805',
+	   longitude: '-111.661060'
 	 },
 	 {
 	 	name: 'vermont',
@@ -279,8 +279,8 @@ app.service('gameService', function($http, $q) {
 	    return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 
-	
-
+	this.finalScore = 0;
+    
 
 
 /*this.states = [

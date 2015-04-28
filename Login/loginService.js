@@ -25,7 +25,19 @@ app.service('loginService', function(fb, $firebaseAuth) {
        	password: password
       })
 
-    } // ends register
+    } 
+  
+
+  this.getUid = function() {
+    var authData = authObj.$getAuth();
+    return authData.uid;
+  }
+
+
+
+
+
+    // ends register
 
    
 }); // ends service 

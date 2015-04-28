@@ -1,6 +1,6 @@
 var app = angular.module('mapApp');
 
-app.controller('gameCtrl', function($scope, gameService, $timeout, $location) {
+app.controller('gameCtrl', function($scope, gameService, $timeout, $location, $rootScope) {
 
 //$scope.coordinates = chance.coordinates().replace(/,/g, '').split(" ");
 //console.log($scope.coordinates);
@@ -9,9 +9,9 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location) {
  //var long = $scope.coordinates[1]
 
 	$scope.score = 0;
-	$scope.counter = 10;
-	$scope.finalScore;
-
+	$scope.counter = 5;
+    $scope.finalScore;
+	$scope.userId = $rootScope.userId;
 
 	$scope.map = {
 		center: { 
@@ -38,17 +38,19 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location) {
 		    gameService.delete($scope.userGuess);
 		    $scope.map = gameService.getNewMap();
 		    console.log($scope.map);
-	    } else if($scope.counter === 1) { 
-			// save score to user via firebase
-			$scope.score = $scope.finalScore;
-			$location.path('/score/:userId')
-		} else {
+	    } else {
     		var rightAnswer = gameService.capitalize(gameService.random.name);
     		alert("Sorry Sucker, it was " + rightAnswer + "!");
     		$timeout(function(){
     			$scope.map = gameService.getNewMap();
     		});
-    	}
+    	} 
+
+    	if($scope.counter === 1) { 
+			//$scope.score = $scope.finalScore;
+			gameService.finalScore = $scope.score;
+			$location.path('/score')
+		} 
   		$scope.userGuess = "";
   		$scope.counter --;
   		
