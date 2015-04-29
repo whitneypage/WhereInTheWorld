@@ -1,14 +1,24 @@
-<h1>Which State ?</h1> 
-<div><h2>{{userGuess}}</h2></div>
-<div><p>Score : {{score}}</p></div>
-<div><p>{{counter}}/10</p></div>
-<button>Play</button>
-<form>
-<input type="text" ng-model="userGuess" placeholder="Enter the State here" />
-<button ng-click ="addScore()">Guess!</button>
-</form>
-</br>
-<div id="map-canvas">
-	<ui-gmap-google-map center='map.center' zoom='map.zoom' maxZoom='map.maxZoom' options='options'></ui-gmap-google-map>
+<header class="navbar navbar-default">
+	<div id="title" class="navbar-header">
+		<h1>Which State ?</h1> 
+	</div>
+	<form id="guessForm">
+		<input type="text" ng-model="userGuess" placeholder="Enter the State here" />
+	</form>
+	<div>
+	<button class="btn btn-primary btn-lg" ng-click ="addScore()">Guess!</button>
+	</div>
+	<div id="currentScore" class="navbar-right">
+		<p>Score : {{score}}</p>
+	</div>
+	<div id="countDown" class="navbar-right">
+		<p>{{counter}}/10</p>
+	</div>
+</header>
+
+<div>
+	<div id="map-canvas">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' maxZoom='map.maxZoom' options='options'></ui-gmap-google-map>
+	</div>
 </div>
 

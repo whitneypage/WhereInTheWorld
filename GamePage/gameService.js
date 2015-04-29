@@ -65,8 +65,8 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	  {
 	 	name: 'illinois',
-	 	latitude:'41.878267',
-	 	longitude:'-87.635883'
+	 	latitude:'441.890876',
+	 	longitude:'-87.609563'
 	 },
 	  {
 	 	name: 'iowa',
@@ -254,7 +254,7 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 
 	this.random;
 	this.getNewMap = function() {
-	  this.random = places[Math.floor(Math.random()*places.length)]
+	   this.random = places[Math.floor(Math.random()*places.length)]
 	   console.log(this.random);
 	   return {
 	   		center: {
@@ -266,7 +266,7 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	}
 
 	this.delete = function(x) {
-	   for(var i = 0; i < places.length; i++){
+	    for(var i = 0; i < places.length; i++){
 	   		if(places[i].name === x){
 	   			places.splice(i, 1);
 	   		}

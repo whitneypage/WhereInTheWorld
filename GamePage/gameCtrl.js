@@ -11,7 +11,6 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location, $r
 	$scope.score = 0;
 	$scope.counter = 5;
     $scope.finalScore;
-	$scope.userId = $rootScope.userId;
 
 	$scope.map = {
 		center: { 
@@ -28,6 +27,8 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location, $r
 		minZoom: 11,
 		
 	};
+
+	
 
 	$scope.addScore = function() {	
 		$scope.userGuess = $scope.userGuess.toLowerCase().replace(/\s+/g, '');
