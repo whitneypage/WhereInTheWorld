@@ -4,7 +4,7 @@ app.controller('scoreCtrl', function($scope, $location, gameService, loginServic
 
 
 $scope.finalScore = gameService.finalScore;
-$scope.bestScore;
+//$scope.bestScore = gameService.getBestScore();
 
 
 var userId = loginService.getUid();
@@ -15,25 +15,27 @@ $scope.game = $firebaseArray(gameRef);
 
 $scope.game.$add({
   score: $scope.finalScore
-}) 
-
-
-
-var scoreArr = [];
-
-$scope.getBestScore = function() {
-	var scoresRef = new Firebase(fb.url + '/game/' + userId)
-
-scoresRef.on("value", function(data) {
-	scoreArr = data.val();
-	console.log(scoreArr.score);
-
 })
-	$scope.bestScore = Math.max.apply(Math, scoreArr);
-	return $scope.bestScore;
-}
 
-$scope.getBestScore();
+$scope.game.$loaded().then(function(data) {
+	console.log(data);
+	var scoreArr = [];
+	
+	for (var i = 0; i < data.length; i++) {
+		scoreArr.push(data[i].score);
+		
+	};
+	
+	console.log(scoreArr);
+	$scope.bestScore = Math.max.apply(Math, scoreArr);
+})
+
+
+
+
+
+
+
 
 
 

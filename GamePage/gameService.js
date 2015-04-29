@@ -1,6 +1,6 @@
 var app = angular.module('mapApp');
 
-app.service('gameService', function($http, $q) {
+app.service('gameService', function($http, $q, $firebaseObject, fb, loginService) {
 
 		var places = [
 	 {
@@ -281,6 +281,7 @@ app.service('gameService', function($http, $q) {
 
 	this.finalScore = 0;
     
+   
 
 
 /*this.states = [
