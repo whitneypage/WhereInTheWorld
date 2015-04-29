@@ -66,7 +66,7 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	  {
 	 	name: 'illinois',
 	 	latitude:'441.890876',
-	 	longitude:'-87.609563'
+	 	longitude:'-87.609563'  
 	 },
 	  {
 	 	name: 'iowa',
@@ -261,7 +261,7 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	   			latitude: this.random.latitude,
 	   			longitude: this.random.longitude
 	   		},
-	   	zoom: 18
+	   	zoom: 17
 	   }
 	}
 

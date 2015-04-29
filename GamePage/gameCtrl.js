@@ -17,7 +17,7 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location, $r
 			latitude:gameService.random.latitude,
 			longitude:gameService.random.longitude
 		}, 
-		zoom: 18,
+		zoom: 17
 	};
 	
 
