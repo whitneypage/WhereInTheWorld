@@ -78,13 +78,47 @@ html, body {
       display: inline-block;
     }
   }*/
-
- .navbar-brand
-{
+.navbar {
+	background-color: rgb(70, 70, 70);
+	margin-bottom: 0px;
+}
+ .navbar-brand {
+ 	padding: 10px;
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     margin: auto;
 } 
+
+.navbar-right li {
+	padding: 25px;
+	text-align: center;
+	margin: auto;
+}
+.navbar-left li {
+	padding: 5px;
+	text-align: center;
+	margin: auto;
+}
+
+.fa {
+	color: white;
+}
+
+h1, h4 {
+	font-size: 35px;
+	color: white;
+}
+
+input[type=text], textarea {
+	background:none;
+	border-color: white;
+	padding:0;
+	margin:0;
+	font-size: 50px;
+	color: white;
+}
+
+
 

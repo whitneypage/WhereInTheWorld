@@ -24,7 +24,8 @@
 		</li>
 
 	</ul> -->
-	
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
 	  <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
@@ -32,24 +33,25 @@
       <span class="icon-bar"></span>
     </button>    
   </div>
-  <a class="navbar-brand">
+  <div class="navbar-brand">
   			<form>
-				<input type="text" ng-model="userGuess" placeholder="Enter the State here" />
+				<input type="text" ng-model="userGuess"/>
 				<button class="btn btn-default navbar-btn" ng-click ="addScore()">Guess!</button>
 			</form>
-	</a>
+	</div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
         <li><i class="fa fa-globe fa-5x"></i></li>
         <li><h1>Which State?</h1></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><p>{{counter}}/10</p></li>
-      <li><p>Score : {{score}}</p></li>
+      <li><h4>{{counter}}/10</h4></li>
+      <li><h4>Score : {{score}}</h4></li>
     </ul>
   </div>
 </nav>
-</header>
+
+
 
 <div>
 	<div id="map-canvas">

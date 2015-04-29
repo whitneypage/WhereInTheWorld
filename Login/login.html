@@ -26,7 +26,7 @@
                         <p>Where</br>are you?</p>
                         
       
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Login</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Play</a>
                     </div>
                 </div>
             </div>
@@ -41,6 +41,7 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $("#menu-toggle").hide();
     });
     </script>
 
