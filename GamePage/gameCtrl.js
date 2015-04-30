@@ -25,7 +25,7 @@ app.controller('gameCtrl', function($scope, gameService, $timeout, $location, $r
 		mapTypeId: google.maps.MapTypeId.SATELLITE,
 		mapTypeControl: false,
 		minZoom: 11,
-		
+		overviewMapControlOptions: google.maps.ControlPosition.BOTTOM_LEFT		
 	};
 
 	

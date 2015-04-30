@@ -20,13 +20,13 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	 {
 	 	name: 'arkansas',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'california',
-	 	latitude:'36.964645',
-	 	longitude:'-122.01523'
+	 	latitude:'39.396745',
+	 	longitude:'-121.140467'
 	 },
 	 {
 	 	name: 'colorado',
@@ -35,23 +35,23 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	  {
 	 	name: 'connecticut',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'delaware',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'florida',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'georgia',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'hawaii',
@@ -70,8 +70,8 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	  {
 	 	name: 'iowa',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'kansas',
@@ -80,8 +80,8 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	  {
 	 	name: 'kentucky',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	    latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'louisiana',
@@ -95,28 +95,28 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	  {
 	 	name: 'maryland',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'massachusetts',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'michigan',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'minnesota',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'mississippi',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	  {
 	 	name: 'missouri',
@@ -165,48 +165,48 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	 {
 	 	name: 'northdakota',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'ohio',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	    latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'oklahoma',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'oregon',
-	 	latitude:'45.485543',
-	 	longitude:'-123.979212'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'pennsylvania',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'rhodeisland',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'southcarolina',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'southdakota',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'tennessee',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	{
 	 	name: 'texas',
@@ -221,33 +221,33 @@ app.service('gameService', function($http, $q, $firebaseObject, fb, loginService
 	 },
 	 {
 	 	name: 'vermont',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	    latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'virginia',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'washington',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	    latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'westvirginia',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'wisconsin',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 	 {
 	 	name: 'wyoming',
-	 	latitude:'61.264117',
-	 	longitude:'-149.852596'
+	 	latitude:'21.666100',
+	 	longitude:'-158.050763'
 	 },
 
 	]

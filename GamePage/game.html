@@ -1,30 +1,4 @@
-<!-- <header class="navbar navbar-default">
 
-    <ul class="navbar-nav">
-    	<li class="pull-left">
-    		<i class="fa fa-globe fa-5x"></i>
-    	</li>
-		<li>
-			<h1>Which State?</h1>
-		</li>
-		<li>
-			<form>
-				<input type="text" ng-model="userGuess" placeholder="Enter the State here" />
-				<button class="btn btn-default navbar-btn" ng-click ="addScore()">Guess!</button>
-			</form>
-		</li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-       <li>
-			<p>{{counter}}/10</p>
-		</li>
-
-		  <li class="pull-right">
-			<p>Score : {{score}}</p>
-		</li>
-
-	</ul> -->
-<script src="bootstrap-theme.min.css"></script>
 
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -44,11 +18,11 @@
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
         <li><i class="fa fa-globe fa-5x"></i></li>
-        <li><h1>Which State?</h1></li>
+        <li><p>Guess the state</p></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><h4>{{counter}}/10</h4></li>
-      <li><h4>Score : {{score}}</h4></li>
+      <li><p>Round : {{counter}}/5</p></li>
+      <li><p>Score : {{score}}</p></li>
     </ul>
   </div>
 </nav>
